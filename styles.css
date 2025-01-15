@@ -1,0 +1,306 @@
+/* General Styles */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000; /* Black background */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333; /* Subtle border for separation */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* White text */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.btn-yellow {
+    background-color: #ffc107; /* Bright yellow */
+    color: #000; /* Black text */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-yellow:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    transform: scale(1.05);
+}
+
+.btn-p {
+    background-color: #397bc7; /* Dark gray */
+    color: #000000; /* White text */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-p:hover {
+    background-color: #1a62ba; /* Slightly lighter gray on hover */
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn-green {
+    background-color: #28a745; /* Bright green */
+    color: #fff; /* White text */
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.6rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-green:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.05);
+}
+
+.btn-blue {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.6rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-blue:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Details Section */
+.details-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 2rem;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.car-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.car-image img:hover {
+    transform: scale(1.02);
+}
+
+.car-details {
+    max-width: 48%;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+.car-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.car-specs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.car-specs li {
+    margin-bottom: 0.5rem;
+}
+
+.car-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    color: #ffc107;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Cards */
+.card {
+    background-color: #111; /* Slightly lighter black */
+    border: 1px solid #333; /* Subtle border */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1); /* Subtle white glow */
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #aaa; /* Light gray text for details */
+}
+
+.card-text.text-warning {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffc107 !important; /* Bright yellow for the price */
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #666; /* Light gray text */
+    border-top: 1px solid #333; /* Subtle border for separation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .details-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .car-details {
+        max-width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .car-title {
+        font-size: 2rem;
+    }
+
+    .btn-blue,
+    .btn-green {
+        font-size: 0.85rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+}
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.reservations {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reservation-card {
+    background: #292929;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+}
+
+.reservation-card img {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.user-info {
+    font-size: 1rem; /* Default size for "Logged in as" */
+    color: #ffffff; /* Adjust text color as needed */
+}
+
+.user-info .user-name {
+    font-weight: bold; /* Make username bold */
+    font-size: 1.5rem; /* Make username larger */
+    margin-left: 5px; /* Add spacing between the two spans */
+    color: #ffdd57; /* Optional: Highlight username in a different color */
+}
+
+

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "admin",
+        "email": "admin@ikarrental.hu",
+        "password": "admin",
+        "isAdmin": true
+    },
+    {
+        "name": "Test User",
+        "email": "aa@maily.com",
+        "password": "12345678A",
+        "isAdmin": false
+    },
+    {
+        "name": "tester",
+        "email": "tt@tt.com",
+        "password": "12345678A",
+        "isAdmin": false
+    },
+    {
+        "name": "a",
+        "email": "a@qq.hu",
+        "password": "12345678C",
+        "isAdmin": false
+    }
+]

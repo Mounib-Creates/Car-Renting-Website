@@ -1,0 +1,166 @@
+
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container,
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Title */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #ffc107;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    background-color: #333;
+    border-color: #ffc107;
+    outline: none;
+    transform: scale(1.02);
+}
+
+button[type="submit"] {
+    background-color: #28a745; /* Green */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1.5rem;
+    align-self: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.05);
+}
+
+.error {
+    font-size: 1rem;
+    color: #ff4d4d; /* Red */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+}
+
+a {
+    color: #ffc107; /* Yellow */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Alert for registration errors */
+.alert-danger {
+    color: #ff4d4d;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Home Button */
+.button-home {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    border-radius: 5px;
+    margin: 2rem 0;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-home:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .login-container,
+    .register-container {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+    }
+}

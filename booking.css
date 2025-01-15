@@ -1,0 +1,158 @@
+
+body {
+    background-color: #000; 
+    color: #fff; 
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffc107; 
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+
+.car-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+    margin-bottom: 2rem;
+}
+
+.car-image {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+.car-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.car-title {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.car-specs {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.car-specs li {
+    font-size: 1.2rem;
+}
+
+.booking-details {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.details-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.booking-details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    background-color: #28a745; 
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838; 
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #007bff; 
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.error-message {
+    font-size: 1.2rem;
+    color: #ff4d4d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .car-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-image {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .car-details {
+        margin-top: 1rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .btn,
+    .btn-secondary {
+        width: 100%;
+    }
+}

@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the add car form */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Title */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffc107; /* Bright yellow */
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Form Styling */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+input[type="url"],
+select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+select:focus {
+    background-color: #333;
+    border-color: #ffc107;
+    outline: none;
+    transform: scale(1.02);
+}
+
+/* Error messages */
+.alert {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.alert.alert-danger {
+    color: #ff4d4d; /* Red for error messages */
+}
+
+.alert.alert-success {
+    color: #28a745; /* Green for success messages */
+}
+
+/* Button Styling */
+button[type="submit"] {
+    background-color: #28a745; /* Bright green */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1.5rem;
+    align-self: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.05);
+}
+
+/* Back to Admin Page Button */
+.btn-secondary {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.6rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button[type="submit"],
+    .btn-secondary {
+        width: 100%;
+    }
+}
+
+/* Input Field Focus */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+select:focus {
+    background-color: #333;
+    border-color: #ffc107;
+    outline: none;
+    transform: scale(1.02);
+}
+
+/* Form Group - Responsive Adjustments */
+.form-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+input[type="text"]:disabled,
+input[type="number"]:disabled,
+input[type="url"]:disabled,
+select:disabled {
+    background-color: #333;
+    cursor: not-allowed;
+}
+
+select {
+    cursor: pointer;
+}
+
+/* Add Car Section Image (if any) */
+.car-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for image */
+.car-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Extra padding for back button */
+a.btn-secondary {
+    margin-top: 2rem;
+}
