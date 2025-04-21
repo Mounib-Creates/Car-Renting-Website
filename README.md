@@ -17,8 +17,5 @@ iKarRental is a comprehensive web-based car rental management system built with 
 - **Frontend**: HTML, CSS, Bootstrap  
 - **Database**: JSON  
 
-## How to Set Up:
-1. Clone the repository:  
-   ```bash
-   git clone <repository-url>
+
 
